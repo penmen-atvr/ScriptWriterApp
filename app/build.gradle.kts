@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.scriptwriterapp"
+    namespace = "com.penmenstudios.scriptwriterapp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.scriptwriterapp"
+        applicationId = "com.penmenstudios.scriptwriterapp"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

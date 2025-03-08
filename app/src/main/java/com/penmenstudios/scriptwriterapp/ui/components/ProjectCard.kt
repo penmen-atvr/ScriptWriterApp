@@ -7,14 +7,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.text.font.FontWeight
 
 @Composable
-fun ProjectCard(title: String) {
+fun ProjectCard(title: String, onClick: () -> Unit) { // ✅ Ensure onClick parameter exists
     Card(
         modifier = Modifier
             .fillMaxWidth()
             .padding(8.dp)
-            .clickable { /* TODO: Open Project */ },
+            .clickable { onClick() }, // ✅ Call onClick when clicked
         elevation = CardDefaults.cardElevation(4.dp)
     ) {
         Row(modifier = Modifier.padding(16.dp)) {

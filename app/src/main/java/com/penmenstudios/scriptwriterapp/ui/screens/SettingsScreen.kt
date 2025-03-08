@@ -7,6 +7,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 
+@OptIn(ExperimentalMaterial3Api::class) // ✅ Fix for the experimental API warning
 @Composable
 fun SettingsScreen(navController: NavHostController) {
     Scaffold(
