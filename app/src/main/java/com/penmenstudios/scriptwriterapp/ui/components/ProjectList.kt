@@ -13,7 +13,7 @@ fun ProjectList(navController: NavHostController) {
         items(sampleProjects) { project ->
             ProjectCard(
                 title = project,
-                onClick = { navController.navigate("project_creation") } // ✅ Pass onClick action
+                onClick = { navController.navigate("script_editor/$project") } // ✅ Open Script Editor
             )
         }
     }
